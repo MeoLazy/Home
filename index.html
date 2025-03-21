@@ -269,14 +269,14 @@
 
 <script>
 function copyLink() {
-    const link = "https://upfiles.com/qY1h"; // Thay link cần sao chép vào đây
+    const link = "https://www.mediafire.com/file/1zp92ng5lqfbuvg/UgPhone_7.2.5.apk/file"; // Thay link cần sao chép vào đây
     const copyButton = document.getElementById("copyButton");
 
     navigator.clipboard.writeText(link).then(() => {
         copyButton.textContent = "Đã Copy Link"; // Đổi chữ
         setTimeout(() => {
             copyButton.textContent = "Copy Link"; // Đổi lại sau 1 giây
-        }, 5000);
+        }, 9000);
     }).catch(err => {
         console.error("Lỗi sao chép:", err);
     });

@@ -29,11 +29,11 @@ button:hover{transform:translateY(-2px);box-shadow:0 10px 20px rgba(88,101,242,0
 <form id="webhookForm">
     <div class="form-group">
         <label for="title">Tiêu đề</label>
-        <input type="text" id="title" placeholder="Nhập tiêu đề...">
+        <input type="text" id="title" placeholder="Nhập...">
     </div>
     <div class="form-group">
         <label for="message">Nội dung *</label>
-        <textarea id="message" placeholder="Nhập nội dung..." required></textarea>
+        <textarea id="message" placeholder="Nhập..." required></textarea>
     </div>
     <button type="submit" id="sendBtn">Gửi Cho Meoooo</button>
 </form>
@@ -120,7 +120,7 @@ async function sendWebhook() {
         if (res.ok) { showStatus('✅ Gửi thành công!', 'success'); setTimeout(clearForm, 2000); }
         else { const err = await res.text(); showStatus(`❌ Lỗi: ${res.status} - ${err}`, 'error'); }
     } catch (e) { showStatus(`❌ Lỗi kết nối: ${e.message}`, 'error'); }
-    finally { sendBtn.disabled = false; sendBtn.textContent = 'Gửi Webhook'; }
+    finally { sendBtn.disabled = false; sendBtn.textContent = 'Gửi Tiếpp'; }
 }
 
 function clearForm() {
